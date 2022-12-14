@@ -72,73 +72,123 @@
   * how to show the first 5 characters in a file
     * `head -c 5 example.txt`
 ## ls
-* Description:
-  * 
+* Description: 
+  * Lists information about files and directories
 * Formula:
-  * `head + options + file or files`
+  * `ls + options + file or files/directories`
 * Examples:
-  * how to 
+  * how to long list
+    * `ls  -l  ~/Documents/`
+  * how to view hidden files
+    * `ls -a ~/Documents/`
+  * how to long list as human readable
+    * `ls -lh ~/Documents/`
 ## man
 * Description:
-  * 
+  *  an interface to the system reference manuals
 * Formula:
-  * `head + options + file or files`
+  * `man + options + command`
 * Examples:
-  * how to
+  * how to view a commands manual
+    * `man ls`
+  * how to view section 2 of the manual
+    * `man 2 ls`
+  * how to instantly find the command
+    * `man -f ls`
 ## mkdir
-* Description:
-  * 
+* Description: make directories
+  * make directories
 * Formula:
-  * `head + options + file or files`
+  * `mkdir + options + dirctory or directories`
 * Examples:
-  * how to
+  * how to make a directory
+    * `mkdir ~/Documents/examplefolder/`
+  * how to make also make parent directories
+    * `mkdir -p ~/Documents/examplefolder/examplefolder2`
+  * displays a message
+    * `mkdir -v ~/Documents/examplefolder/`
 ## mv
 * Description:
-  * 
+  * moves and renames files
 * Formula:
-  * `head + options + file or files`
+  * `mv + options + file or files + destination`
 * Examples:
-  * how to
+  * how to move a file
+    * `mv example.txt ~/Documents/(example.txt?)`
+  * how to rename a file
+    * `mv example.txt ~/Documents/(rename.txt?)`
+  * aks for confirmation
+    * `mv -i example.txt ~/Documents/(example.txt?)`
 ## tac
 * Description:
-  * 
+  * concatenate and print files in reverse
 * Formula:
-  * `head + options + file or files`
+  * `tac + options + file or files`
 * Examples:
-  * how to
+  * how to  print a file in reverse
+    * `tac example.txt`
+  * seperator
+    * `tac -b concat.txt tacexample.txt`
+  * no seperator
+    * `tac -r concat.txt tacexample.txt`
 ## tail
 * Description:
-  * 
+  * output the last part of files
 * Formula:
-  * `head + options + file or files`
+  * `tail + options + file or files`
 * Examples:
-  * how to
+  * how to print the last 10 lines of a file
+    * `tail example.txt`
+  * how to print the last 5 lines of a file
+    * `tail -n 5 example.txt`
+  * how to print the last 5 characters of a file
+    * `tail -c 5 example.txt`
 ## touch
 * Description:
-  * 
+  * make a file
 * Formula:
-  * `head + options + file or files`
+  * `touch + options + file or files`
 * Examples:
-  * how to
+  * how to make a file
+    * `touch ~/Documents/example.txt`
+  * how to change access time
+    * `touch -a fileName`
+  * how to update modification time
+    * `touch -c fileName`
 ## tr
 * Description:
-  * 
+  * translating or deleting characters.
 * Formula:
-  * `head + options + file or files`
+  * `tr [OPTION] SET1 [SET2]`
 * Examples:
-  * how to
+  * how to translate lowercase to uppercase
+    * `greekfile | tr [a-z] [A-Z]`
+  * How to translate white-space characters to tabs
+    * `echo "Welcome To GeeksforGeeks" | tr [:space:] "\t"`
+  * How to translate braces into parenthesis
+    * `tr "{}" "()" <greekfile >newfile.txt`
 ## tree
 * Description:
-  * 
+  * visually display parenthood
 * Formula:
-  * `head + options + file or files`
+  * `tree + options + directory or directories`
 * Examples:
-  * how to
+  * how to show parenthood
+    * `tree ~/Documents/`
+  * list with a pattern
+    *  `tree -P sample*`
+  * list with perissions
+    * `tree -p ./GFG`
 ## vim/nano
 * Description:
-  * 
+  *  text editoer
 * Formula:
-  * `head + options + file or files`
+  * `vim/nano + options + file or files`
 * Examples:
-  * how to
+  * vim
+    * more powerful/harder to learn
+  * nano
+    * less powerful/easier to learn
+  
+
 
